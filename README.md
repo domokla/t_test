@@ -1,4 +1,6 @@
 # t_test
-t-test analyses
+T test analyses
 
-The analysis starts by examining the normality of the data distribution using the Shapiro-Wilk test for both groups. If either group’s data is not normally distributed or if the variances are unequal (checked with the Levene test), the code automatically switches to the Mann-Whitney U test, which is a non-parametric alternative. If both normality and equal variance assumptions are met, a two-sided t-test is performed to compare the means of the two groups. This automated approach ensures that the appropriate statistical test is used based on the characteristics of the data.
+The script generates synthetic datasets with normal or uniform distributions and performs statistical tests to compare them. It automatically selects the appropriate test (t-test or Mann-Whitney U test) based on normality and variance checks, then saves the results to text files and histograms as PNG images. Setting a working directory ensures organized storage of all output files.
+
+https://medium.com/@datafoxhu/automated-selection-of-statistical-tests-for-group-comparison-907cf56be9f9
